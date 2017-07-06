@@ -11,14 +11,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link href="main.css" rel="stylesheet" type="text/css">
+   <link href="/resources/bootstrap/css/main.css" rel="stylesheet" type="text/css">
     <title>HOME</title>
 </head>
 <body>
 
-<jsp:include page="navigation.jsp">
-
-
+    <%@ include file="navigation.jsp" %>
 <div class="container">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div class="container">
@@ -27,31 +25,33 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
 
     <div class="carousel-inner">
       <div class="item active">
-        <img src="WebContent/images/1.jpg" alt="P-51" width="100%">
+        <img src="/resources/images/1.jpg" alt="P-51" width="100%">
 
       </div>
       <div class="item">
-        <img src="WebContent/images/2.jpg" alt="F-18" width="100%">
+        <img src="/resources/images/2.jpg" alt="F-18" width="100%">
 
       </div>
       <div class="item">
-        <img src="WebContent/images/3.jpg" alt="P-51" width="100%">
+        <img src="/resources/images/3.jpg" alt="P-51" width="100%">
 
       </div>
       <div class="item">
-        <img src="WebContent/images/4.jpg" alt="B-52" width="100%">
+        <img src="/resources/images/4.jpg" alt="B-52" width="100%">
         </div>
       <div class="item">
-        <img src="WebContent/images/5.jpg" alt="B-52" width="100%">
+        <img src="/resources/images/5.jpg" alt="B-52" width="100%">
 
 </div>
       <div class="item">
-        <img src="WebContent/images/6.jpg" alt="B-52" width="100%">
+        <img src="/resources/images/6.jpg" alt="B-52" width="100%">
 
      
       </div>

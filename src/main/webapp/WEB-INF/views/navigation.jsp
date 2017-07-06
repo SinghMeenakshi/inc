@@ -67,12 +67,12 @@
          				
   						 	</ul>
   						</li>
-  						<li><a href="#">ABOUT US</a></li>
-  						<li><a href="#">CONTACT</a></li>
+  						<li><a href="aboutus">ABOUT US</a></li>
+  						<li><a href="contactus">CONTACT</a></li>
   					</ul>
   					 <ul class="nav navbar-nav navbar-right" id="btn1">
-                     <li><a href="#"><button class="btn btn navbar-btn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
-                     <li><a href="#"><button class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
+                     <li><a href="registeration"><button class="btn btn navbar-btn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
+                     <li><a href="login"><button class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
                     </ul>
                   
   				</div><!-- navbar container closed -->
