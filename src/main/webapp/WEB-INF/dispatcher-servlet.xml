@@ -15,7 +15,7 @@
 
 </bean>
 <mvc:annotation-driven></mvc:annotation-driven>
-<mvc:resources mapping="/imgages/**" location="WEB-INF/resources/images/"></mvc:resources>
-<mvc:resources mapping="/css/**" location="WEB-INF/resources/bootstrap/css/"></mvc:resources>
+<mvc:resources mapping="/resources/images/**" location="WEB-INF/resources/images/"></mvc:resources>
+<mvc:resources mapping="/resources/style/**" location="WEB-INF/resources/style/"></mvc:resources>
 <context:component-scan base-package="com.work.inc.controller"></context:component-scan>
 </beans>

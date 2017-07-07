@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link href="/resources/bootstrap/css/main.css" rel="stylesheet" type="text/css">
+   <link href="/resources/style/main.css" rel="stylesheet" type="text/css">
     <title>HOME</title>
 </head>
 <body>
@@ -90,7 +90,7 @@
 						<h3 class="panel-title">HOLY TREK</h3>
 					</div><!-- ending panel heading -->
 					
-						<img src=".jpg" alt="VISIT THIS HOLY PLACE" class="img-circle">
+						<img src="/resources/images/4.jpg" alt="VISIT THIS HOLY PLACE" class="img-circle">
 						<p>This is the to get the peace of mind and rejuvenate yourself</p>
 						
 						<a href="#" target="_blank" class="btn btn-warning btn-block">lets go!!</a>
@@ -103,7 +103,7 @@
 						<h3 class="panel-title">CHILDREN OFFERS</h3>
 					</div><!-- ending panel heading -->
 					
-						<img src=".jpg" alt="SWEET CHILDREN MEMORIES" class="img-circle">
+						<img src="/resources/images/6.jpg" alt="SWEET CHILDREN MEMORIES" class="img-circle">
 						<p>MAKE SOME NEW MEMORIES.. VISIT THIRUVANANTHAPURAM</p>
 						
 						<a href="#" target="_blank" class="btn btn-danger btn-block">CREATE NEW MEMORIES</a>
@@ -116,7 +116,7 @@
 						<h3 class="panel-title">FAMILY PROGRAM</h3>
 					</div><!-- ending panel heading -->
 					
-						<img src=".jpg" alt="FAMILY VISIT" class="img-circle">
+						<img src="/resources/images/5.jpg" alt="FAMILY VISIT" class="img-circle">
 						<p>ENJOYING WITH FAMILY WHILE GOING AROUND INDIA</p>
 						
 						<a href="#" target="_blank" class="btn btn-info btn-block">FAMILY TIME!!</a>
