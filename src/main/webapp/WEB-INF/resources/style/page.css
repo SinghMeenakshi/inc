@@ -29,7 +29,7 @@ li.dropdown:hover > .dropdown-menu
     display: block;
 }
 
-<!-- CAROUSEL OG HOME PAGE-->
+<!-- CAROUSEL OF HOME PAGE-->
 body { 
     padding-top: 70px; 
 }
@@ -48,7 +48,7 @@ body {
 }
 
 
-<!-- PANEL SECTION-->
+<!-- PANEL SECTION OF REGISTERARTION PAGE-->
 
 features
 {
@@ -173,3 +173,26 @@ body {
 {
     margin-top: 1px;
 }
+
+ <!-- FOOTER  -->
+ 
+ footer
+ {
+ 		background: #333;
+ 		color:#eee;
+ 		font-size:11px;
+ 		padding:20px;
+ }
+  ul.unstyled
+  {
+  	list-style:none;
+  	padding:0;
+  }
+ 
+ 
+ <!-- contact us  -->
+ 
+  body
+   {
+  		 padding-top:20px;
+   }

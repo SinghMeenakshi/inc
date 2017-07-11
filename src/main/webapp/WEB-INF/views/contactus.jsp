@@ -4,9 +4,65 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="/resources/style/page.css" rel="stylesheet" type="text/css">
+<title>CONTACT US</title>
 </head>
 <body>
-
+		
+	 <%@ include file="navigation.jsp" %>	
+	<div class="container">
+	<div class="col-sm-6">
+	 <h3> INCREDIBLE INDIA TOUR</h3>
+	 <p> You can contact us to on our watsapp no. or visit us on <a href="/">incredibleindiatour <a>website.</p>
+	 <form>
+	 <fieldset>
+	 <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
+    
+           
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
+    
+           
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+           
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+          </div>
+          
+          <div class="col-sm-6">
+          		<h4><span class="glyphicon glyphicon-map-marker" ></span>OUR LOCATION</h4>
+          		
+          		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.000508372712!2d77.19257212383076!3d28.61476542969879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2a99ba1e313%3A0x7ed0da6bc307aa30!2sRashtrapati+Bhawan%2C+President&#39;s+Estate%2C+New+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1499618958392" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+     </div> 
+	
+	
+	
 </body>
 </html>
+ <%@ include file="footer.jsp" %>

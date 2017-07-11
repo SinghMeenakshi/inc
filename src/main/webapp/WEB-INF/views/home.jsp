@@ -11,13 +11,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link href="/resources/style/main.css" rel="stylesheet" type="text/css">
+   <link href="/resources/style/page.css" rel="stylesheet" type="text/css">
     <title>HOME</title>
 </head>
 <body>
 
     <%@ include file="navigation.jsp" %>
 <div class="container">
+<div class="thumbnail">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div class="container">
     <ol class="carousel-indicators">
@@ -69,7 +70,7 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-
+</div>
 
 </div><!--  end of  container -->
 
@@ -128,3 +129,4 @@
 </div><!--  ending home page container -->
 </body>
 </html>
+ <%@ include file="footer.jsp" %>
