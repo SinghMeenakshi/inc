@@ -22,7 +22,7 @@
            
   <mvc:annotation-driven></mvc:annotation-driven>
 <context:component-scan base-package="com.work.inc.controller"></context:component-scan>
-<mvc:resources mapping="/resources/**" location="WEB-INF/resources/images/"></mvc:resources>
+<mvc:resources mapping="/resources/images/**" location="WEB-INF/resources/images/"></mvc:resources>
 <mvc:resources mapping="/resources/style/**" location="WEB-INF/resources/style/"></mvc:resources>
            
 <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
