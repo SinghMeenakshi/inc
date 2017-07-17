@@ -6,13 +6,10 @@
 .navbar-inverse
 {
 	background-color:black;
-	border-color:blue;
+	border-color:red;
 	padding:5px 5px;
 }
-.btn1
-{
-	padding:5px 5px;
-}
+
 .mynavbar
 {
 
@@ -29,32 +26,8 @@ li.dropdown:hover > .dropdown-menu
     display: block;
 }
 
-<!-- CAROUSEL OF HOME PAGE-->
-body { 
-    padding-top: 70px; 
-}
-@media screen and (min-width:768px) and (max-width:990px)
- {
-  body
-   {
-    margin-top:100px;
-  }
-}
-@media screen and (min-width:991px) and (max-width:1200px) 
-{
-  body 
-    margin-top:70px;
-  }
-}
+<!-- PANEL SECTION -->
 
-
-<!-- PANEL SECTION OF REGISTERARTION PAGE-->
-
-features
-{
-	text-align:center;
-	border-color:blue;
-}
 
 #features img
 {
@@ -72,7 +45,7 @@ h3
 
 
 /* Space out content a bit */
-body {
+#reg {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -165,7 +138,7 @@ body {
   
   <!-- LOGIN FORM -->
   
- body
+#log
  {
  	padding-top:100px;
  }
@@ -174,11 +147,11 @@ body {
     margin-top: 1px;
 }
 
- <!-- FOOTER  -->
+<!-- footer-->
  
  footer
  {
- 		background: #333;
+ 		background-color:black;
  		color:#eee;
  		font-size:11px;
  		padding:20px;
@@ -189,10 +162,9 @@ body {
   	padding:0;
   }
  
- 
  <!-- contact us  -->
  
-  body
+ #con
    {
-  		 padding-top:20px;
+  		 margin-top:200px;
    }

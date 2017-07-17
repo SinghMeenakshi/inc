@@ -9,96 +9,88 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="page.css" rel="stylesheet" type="text/css">
+<link href="style/page.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <title>NAVBAR</title>
 </head>
 <body>
 
-
-	<nav class="navbar navbar-fixed-top  navbar navbar-inverse"
-		role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-responsive-collapse">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="/">INCREDIBLE INDIA TOUR</a>
-		</div>
-		<!-- navbar header closed -->
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">HOME</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">DESTINATIONS<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">DELHI</a>
-						<li><a href="#">GOA</a>
-						<li><a href="#">PUNJAB</a>
-						<li><a href="#">MUMBAI</a>
-						<li><a href="#">HARYANA</a>
-						<li><a href="#">ARUNCHAL PRADESH</a>
-					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">IDEAS<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">TREKKING</a>
-						<li><a href="#">RIVER RAFTING</a>
-						<li><a href="#">SAFARI</a>
-						<li><a href="#">HOLY VISIT</a>
-						<li><a href="#">MOUNTAINEERING</a>
-						<li><a href="#">JEEP SAFARI</a>
-					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">PACKAGES <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">PACKAGES BY STATES</a>
-						<li><a href="#">PACKAGES BT INTEREST</a>
-						<li><a href="#">FIXED DEPATURE TOUR</a>
-						<li><a href="#">LUXURY PACKAGE</a>
-					</ul></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">STAY<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">CITY WISE STAY</a>
-						<li><a href="#">LUXURY STAY</a>
-						<li><a href="#">RESORTS</a>
-					</ul></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">PACKAGES CHANGES<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="getpackform">ADD PACKAGE</a>
-						<li><a href="all/pack/getallpacks">VIEW ALL PACKAGES</a>
-						<li><a href="#">EDIT PACKAGES</a>
-					</ul></li>
-				<li><a href="aboutus">ABOUT US</a></li>
-				<li><a href="contactus">CONTACT</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right" id="btn1">
-				<li><a href="registeration"><button
-							class="btn btn navbar-btn">
-							<span class="glyphicon glyphicon-user"></span> Sign Up
-						</button></a></li>
-				<li><a href="login"><button
-							class="btn btn-primary navbar-btn">
-							<span class="glyphicon glyphicon-log-in"></span> Login
-						</button></a></li>
-			</ul>
-
-		</div>
-		<!-- navbar container closed -->
-	</div>
-	<!-- navbar list closed --> 
-	</nav>
-	<!-- navbar closed -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">INCREDIBLE INDIA TOUR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">HOME</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">DESTINATIONS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">DELHI</a></li>
+            <li><a href="#">GOA</a></li>
+            <li><a href="#">HIMACHAL</a></li>
+            <li><a href="#">PUNJAB</a></li>
+            <li><a href="#">MUMBAI</a></li>
+          </ul>
+        </li>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">IDEAS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">TREKKING</a></li>
+            <li><a href="#">RIVER RAFTING</a></li>
+            <li><a href="#">SAFARI</a></li>
+            <li><a href="#">HOLY VISIT</a></li>
+            <li><a href="#">MOUNTAINEERING</a></li>
+            <li><a href="#">JEEP SAFARI</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          				<li><a href="#" > PACKAGES BY STATES</a></li>
+						<li><a href="#">PACKAGES BT INTEREST</a></li>
+						<li><a href="#">FIXED DEPATURE TOUR</a></li>
+						<li><a href="#">LUXURY PACKAGE</a></li>
+            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">STAY<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">CITY WISE</a></li>
+            <li><a href="#">LUXURY WISE</a></li>
+            <li><a href="#">RESORTS</a></li>
+          </ul>
+        </li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGE CHANGES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          				<li><a href="getpackform">ADD PACKAGE</a></li>
+						<li><a href="all/pack/getallpacks">VIEW ALL PACKAGES LIST</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus">ABOUT US</a></li>
+        <li><a href="contactus">CONTACT US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
 </body>
 </html>

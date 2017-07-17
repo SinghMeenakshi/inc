@@ -8,19 +8,21 @@
 </head>
 <body>
 	<%@ include file="navigation.jsp"%>
-	<form:form action="savepack" method="post" modelAttribute="pack">
+	<form:form action="savepack" method="post" modelAttribute="pack" >
+	<div class="container" >
 		<form hidden path="id" />
 					ENTER THE PAKAGE NAME:  <form:input path="packageName" />
 		<br>
 					ENTER THE PRICE:		<form:input path="price" />
 		<br>
-					ENTER THE QUANTITY:		<form:input path="packno" />
+					ENTER THE TOURNO:		<form:input path="tourno" />
 		<br>
 					ENTER THE DESCRIPTION:	<form:textarea path="description" />
 		<br>
 		<input type="submit" value="add product">
 
 	</form:form>
+	</div>
 </body>
 </html>
 <%@ include file="footer.jsp"%>

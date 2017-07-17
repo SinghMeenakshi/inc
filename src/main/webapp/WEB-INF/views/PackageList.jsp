@@ -8,20 +8,30 @@
 </head>
 <body>
 	<%@ include file="navigation.jsp"%>
-	<b>LIST OF PRODUCTS</b>
-	<div class="container">
-		<table class="table table-striped">
+	<div class="container" style="margin-top:200px;">
+	<b >LIST OF PRODUCTS</b>
+	
+		<table class="table table-striped" >
 		<thead>
 			<tr>
 				<th>PACKAGE NAME</th>
 				<th>PACKAGE DESCRIPTION</th>
+				<th> PRICE </th>
+				<th>ACTION</th>
 			</tr>
 		</thead>
 		<tbody>
 			<c:forEach items="${packs}" var="p">
+			<c:url value="/all/pack/viewpack/${p.id}" var="viewUrl" ></c:url>
+			<c:url value="/admin/pack/geteditform/${p.id}" var="editUrl"></c:url>
+			<c:url value="/admin/pack/deletepack/${p.id}" var="deleteUrl"></c:url>
 			<tr>
-				<td>${p.packName}</td>
-				<td>${p.description}</td>
+					<td><a href="${viewUrl}">${p.packageName }</a><td>${p.description}</td><td>${p.price }</td>
+					<td>
+					<a href="${ViewUrl}" > <span class="glyphicon glyphicon-info-sign"></span></a>
+					<a href="${editUrl}" > <span class="glyphicon glyphicon-pencil"></span></a>
+					<a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash"></span></a>
+					</td>
 			</tr>
 			</c:forEach>
 		</tbody>
