@@ -20,12 +20,6 @@ public class HomeController
 		}
 		
 		
-		@RequestMapping("/registeration")
-		public String registeration()
-		{
-			return "registeration";
-		}
-		
 		@RequestMapping("/aboutus")
 		public String aboutus()
 		{

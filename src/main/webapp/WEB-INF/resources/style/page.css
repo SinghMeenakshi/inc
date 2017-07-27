@@ -3,7 +3,7 @@
 
 <!-- NAVIGATION BAR-->
 
-.navbar-inverse
+/* .navbar-inverse
 {
 	background-color:black;
 	border-color:red;
@@ -24,7 +24,7 @@
 li.dropdown:hover > .dropdown-menu 
 {
     display: block;
-}
+} */
 
 <!-- PANEL SECTION -->
 
@@ -43,6 +43,7 @@ h3
 	text-align:center;
 }
 
+<!-- REGISTERATION SECTION -->
 
 /* Space out content a bit */
 #reg {
@@ -132,7 +133,7 @@ h3
     left: 0;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url('https://besttimetovisitindia.files.wordpress.com/2013/03/south-india-tour-operator-3.jpg');
+    background-image: url('http://rbstravels.com/images/Departments/Packages/JODHPURJAISALMERTOURPACKAGE/DAY4/1.jpg');
     background-repeat:repeat;
   }
   

@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<footer>
+<footer >
 
-	<div class="container-fluid" style="background-color:black">
+	<div class="container-fluid" style="background-color:black" >
 		<div class="row">
 			<div class="col-sm-2">
 				<h6>COPYRIGHT &copy;</h6>

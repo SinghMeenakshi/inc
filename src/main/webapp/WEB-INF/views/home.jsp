@@ -6,7 +6,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style/page.css" rel="stylesheet" type="text/css">
 <title>HOME</title>
 </head>
 <body >
@@ -26,21 +25,21 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/3.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="images/img1.jpg" alt="tour" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="images/5.jpg" alt="Chicago" style="width:100%;">
+        <img src="images/img2.jpg" alt="incredible" style="width:100%;">
       </div>
     
     <div class="item">
-        <img src="images/6.jpg" alt="Chicago" style="width:100%;">
+        <img src="images/img3.JPG" alt="india" style="width:100%;">
       </div>
       <div class="item">
-        <img src="images/2.jpg" alt="Chicago" style="width:100%;">
+        <img src="images/img4.jpg" alt="mesmerising" style="width:100%;">
       </div>
       <div class="item">
-        <img src="images/4.jpg" alt="New york" style="width:100%;">
+        <img src="images/img5.jpg" alt="experience" style="width:100%;">
       </div>
     </div>
 
@@ -128,6 +127,8 @@
 
 	</div>
 	<!--  ending home page container -->
+	
+	<%@ include file="footer.jsp"%>
 </body>
 </html>
-<%@ include file="footer.jsp"%>
+

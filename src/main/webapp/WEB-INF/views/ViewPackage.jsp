@@ -8,8 +8,12 @@
 </head>
 <body>
 <%@ include file="navigation.jsp"%>
-	<B style="margin-top:200px;">DETAILS ABOUT THE PAKAGES</B>
+	<B >DETAILS ABOUT THE PAKAGES</B>
 <table>
+   <tr>
+   <c:url value="images/${pack.id }.png" var="imageUrl"></c:url>
+   <td><img src="${imageUrl }" height="50" width="50"></td>
+   </tr>
 	<tr>
 			<td>PACKAGE NAME:</td><td>${pack.packageName }</td>
 	</tr>
@@ -19,9 +23,11 @@
 	<tr>
 			<td>Description:</td> <td> ${pack.description }</td>
 	</tr>
-</table>	
+</table>
+	
 
-<c:url value="all/pack/getallpacks" var="url1"></c:url>
+<c:url value="getallpacks" var="url1"></c:url>
+<a href="${url1 }" class="btn btn-info">BACK TO PACKAGE LIST</a>
+<%@ include file="footer.jsp"%>
 </body>
 </html>
-<%@ include file="footer.jsp"%>
