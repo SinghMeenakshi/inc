@@ -13,7 +13,7 @@
 		{
 			var searchCondition='${searchCondition}';
 			$('.table').DataTable({
-				"lengthMenu" : [ [3,5,7,-1], [3,5,7,"ALL"] ],
+				"lengthMenu" : [ [3,5,7,10], [3,5,7,10] ],
 			"oSearch":
 					{
 					"sSearch":searchCondition
@@ -25,17 +25,15 @@
 </head>
 <body>
 	
-	<div class="container">
+	<div class="container-fluid">
 	<b >LIST OF PRODUCTS</b>
 	
-		<table class="table table-striped table-hover" >
+		<table class="table table-striped table-hover" style="font-size:20px;">
 		<thead>
-			<tr>
+			<tr style="color:green;">
 				<th>IMAGE</th>
 				<th>PACKAGE NAME</th>
-				<th>PACKAGE DESCRIPTION</th>
 				<th>PRICE</th>
-				<th>VACANCY</th>
 				<th>CATEGORY</th>
 				<th>VIEW</th>
 				<th>EDIT</th>
@@ -43,18 +41,18 @@
 				
 			</tr>
 		</thead>
-		<tbody>
+		<tbody  style="color:purple;" >
 			<c:forEach items="${packs}" var="p">
 			<c:url value="images/${p.id }.png" var="imageUrl"></c:url>
 			<c:url value="/viewpack${p.id}" var="viewUrl" ></c:url>
 			<c:url value="/geteditform/${p.id}" var="editUrl"></c:url>
 			<c:url value="/deletepack/${p.id}" var="deleteUrl"></c:url>
 			<tr>
-					<td><img src="${imageUrl }" height="50" width="50"></td>
-					<td><a href="${viewUrl}">${p.packageName }</a><td>${p.description}</td><td>${p.price }</td><td>${p.vacancy }</td><td>${p.category.categoryName }</td>
-					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign"></span></a></td>
-					<td><a href="${editUrl}" > <span class="glyphicon glyphicon-pencil"></span></a></td>
-					<td><a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash"></span></a></td>
+					<td><img src="${imageUrl }" height="150" width="200"></td>
+					<td><a href="${viewUrl}">${p.packageName }</a><td><b class="fa fa-inr">${p.price }</b></td><td>${p.category.categoryName }</td>
+					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:blue;"></span></a></td>
+					<td><a href="${editUrl}" > <span class="glyphicon glyphicon-pencil" style="color:brown;"></span></a></td>
+					<td><a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash" style="color:red;"></span></a></td>
 			</tr>
 			</c:forEach>
 		</tbody>

@@ -1,13 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ include file="navigation.jsp"%>
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>LOGIN PAGE</title>
 </head>
-<body id="log">
+<%@ include file="navigation.jsp"%>
+<body style="margin-top:300px;">
 
 
 	<div class="container">
@@ -18,16 +19,16 @@
 					<div class="heading">
 						<h3 class="title">LOGIN</h3>
 					</div>
-
-					<form>
+					<c:url value="/j_spring_security_check" var="login"></c:url>	
+					<form action="${login }" method="post">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email"
+								<input class="form-control" placeholder="username" name="j_username"
 									type="text">
 							</div>
 							<div class="form-group">
 								<input class="form-control" placeholder="Password"
-									name="password" type="password" value="">
+									name="j_password" type="password" value="">
 							</div>
 							<div class="checkbox">
 								<label> <input name="remember" type="checkbox"
