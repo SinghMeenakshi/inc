@@ -36,8 +36,10 @@
 				<th>PRICE</th>
 				<th>CATEGORY</th>
 				<th>VIEW</th>
+				<security:authorize access="hasRole('Role_ADMIN')">
 				<th>EDIT</th>
 				<th>DELETE</th>
+				</security:authorize>
 				
 			</tr>
 		</thead>
@@ -45,14 +47,16 @@
 			<c:forEach items="${packs}" var="p">
 			<c:url value="images/${p.id }.png" var="imageUrl"></c:url>
 			<c:url value="/viewpack${p.id}" var="viewUrl" ></c:url>
-			<c:url value="/geteditform/${p.id}" var="editUrl"></c:url>
-			<c:url value="/deletepack/${p.id}" var="deleteUrl"></c:url>
+			<c:url value="/admin/geteditform${p.id}" var="editUrl"></c:url>
+			<c:url value="/admin/deletepack${p.id}" var="deleteUrl"></c:url>
 			<tr>
 					<td><img src="${imageUrl }" height="150" width="200"></td>
 					<td><a href="${viewUrl}">${p.packageName }</a><td><b class="fa fa-inr">${p.price }</b></td><td>${p.category.categoryName }</td>
 					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:blue;"></span></a></td>
+					<security:authorize access="hasRole('Role_ADMIN')">
 					<td><a href="${editUrl}" > <span class="glyphicon glyphicon-pencil" style="color:brown;"></span></a></td>
 					<td><a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash" style="color:red;"></span></a></td>
+					</security:authorize>
 			</tr>
 			</c:forEach>
 		</tbody>

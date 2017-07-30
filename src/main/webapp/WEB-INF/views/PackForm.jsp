@@ -10,7 +10,7 @@
 	<%@ include file="navigation.jsp"%>
 	<div class="container">
 
-						<form:form action="savepack" method="post" modelAttribute="pack"
+						<form:form action="/admin/savepack" method="post" modelAttribute="pack"
 							enctype="multipart/form-data">
 
 							<div class="form-group">

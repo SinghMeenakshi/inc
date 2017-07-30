@@ -1,28 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
+<%@ taglib prefix="security"
+	uri="http://www.springframework.org/security/tags"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
- <%@ page isELIgnored="false" %>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link href="style/page.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="style/page.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
- <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
- <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
-    
-   
-   
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" />
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+
+
+
 <title>NAVBAR</title>
 </head>
 <body>
@@ -67,22 +75,50 @@
 						<li><a href="searchbyCategory14">RESORTS</a></li>
 						<li><a href="searchbyCategory15">HOTELS</a></li>
 					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">PACKAGE CHANGES<span
-						class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="getpackform">ADD PACKAGE</a></li>
-						<li><a href="getallpacks">VIEW ALL PACKAGES LIST</a></li>
-					</ul></li>
+				<c:if test="${pageContext.request.userPrincipal.name!=null }">
+
+					<li class="dropdown"><security:authorize
+							access="hasRole('Role_ADMIN')">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGE
+								CHANGES<span class="caret"></span>
+							</a>
+						</security:authorize>
+						<ul class="dropdown-menu">
+							<li><a href="/admin/getpackform">ADD PACKAGE</a></li>
+							<li><a href="getallpacks">VIEW ALL PACKAGES LIST</a></li>
+						</ul></li>
+
+				</c:if>
 				<li><a href="aboutus">ABOUT US</a></li>
 				<li><a href="contactus">CONTACT US</a></li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="Registeration"><span
-						class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="login"><span
-						class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+			<c:if test="${pageContext.request.userPrincipal.name==null }">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="Registeration"><span
+							class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="login"><span
+							class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</c:if>
 			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><c:if
+						test="${pageContext.request.userPrincipal.name!=null }">
+						<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
+					</c:if></li>
+
+				<li><security:authorize access="hasRole('Role_USER')">
+						<li><a href="<c:url value="/booking/getbooking"></c:url>">BOOKING</a></li>
+					</security:authorize></li>
+
+
+				<c:url value="/j_spring_security_logout" var="logoutUrl"></c:url>
+				<c:if test="${pageContext.request.userPrincipal.name!=null }">
+					<li><a href="${logoutUrl }">logout</a></li>
+				</c:if>
+			</ul>
+
 		</div>
 	</div>
 	</nav>

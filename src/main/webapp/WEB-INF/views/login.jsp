@@ -8,10 +8,10 @@
 <title>LOGIN PAGE</title>
 </head>
 <%@ include file="navigation.jsp"%>
-<body style="margin-top:300px;">
+<body >
 
 
-	<div class="container">
+	<div class="container" style="margin-top:20px;">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 
