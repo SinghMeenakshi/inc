@@ -29,6 +29,7 @@
 <a href="booking/addbooking/${pack.id }/${persons }"><span class="glyphicon glyphicon-plane"></span></a>
 <c:url value="getallpacks" var="url1"></c:url>
 <a href="${url1 }" class="btn btn-info">BACK TO PACKAGE LIST</a>
+
 <%@ include file="footer.jsp"%>
 </body>
 </html>
