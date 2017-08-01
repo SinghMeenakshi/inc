@@ -50,7 +50,7 @@
 			<c:url value="/admin-geteditform${p.id}" var="editUrl"></c:url>
 			<c:url value="/admin-deletepack${p.id}" var="deleteUrl"></c:url>
 			<tr>
-					<td><img src="${imageUrl }" height="150" width="200"></td>
+					<td><img src="${imageUrl }" height="100" width="150"></td>
 					<td><a href="${viewUrl}">${p.packageName }</a><td><b class="fa fa-inr">${p.price }</b></td><td>${p.category.categoryName }</td>
 					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:blue;"></span></a></td>
 					<security:authorize access="hasRole('ROLE_ADMIN')">

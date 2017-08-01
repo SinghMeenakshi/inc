@@ -11,7 +11,6 @@
 <body>
 <%@ include file="navigation.jsp"%>
 	<div class="container" ></div>
-
 </body>
 </html>
 <%@ include file="footer.jsp"%>

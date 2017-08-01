@@ -80,7 +80,7 @@
 						class="img-circle">
 					<p>This is the to get the peace of mind and rejuvenate yourself</p>
 
-					<a href="holy"  class="btn btn-warning btn-block">lets
+					<a href="holy" target="_blank" class="btn btn-warning btn-block">lets
 						go!!</a>
 				</div>
 				<!-- ending panel  -->
