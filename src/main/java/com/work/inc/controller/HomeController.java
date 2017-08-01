@@ -36,4 +36,9 @@ public class HomeController
 			return "footer";
 		}
 		
+		@RequestMapping("/holy")
+		public String holy()
+		{
+			return "holy";
+		}
 }

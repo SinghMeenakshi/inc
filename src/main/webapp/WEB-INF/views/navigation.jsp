@@ -75,20 +75,18 @@
 						<li><a href="searchbyCategory14">RESORTS</a></li>
 						<li><a href="searchbyCategory15">HOTELS</a></li>
 					</ul></li>
-				<c:if test="${pageContext.request.userPrincipal.name!=null }">
-
-					<li class="dropdown"><security:authorize
-							access="hasRole('Role_ADMIN')">
+				
+					<li class="dropdown"><security:authorize access="hasRole('ROLE_ADMIN')">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGE
 								CHANGES<span class="caret"></span>
 							</a>
 						</security:authorize>
 						<ul class="dropdown-menu">
-							<li><a href="/admin/getpackform">ADD PACKAGE</a></li>
-							<li><a href="getallpacks">VIEW ALL PACKAGES LIST</a></li>
+							<security:authorize access="hasRole('ROLE_ADMIN')"><li><a href="admin-getpackform">ADD PACKAGE</a></security:authorize></li>
+							<security:authorize access="hasRole('ROLE_ADMIN')"><li><a href="getallpacks">VIEW ALL PACKAGES LIST</a></security:authorize></li>
 						</ul></li>
 
-				</c:if>
+			
 				<li><a href="aboutus">ABOUT US</a></li>
 				<li><a href="contactus">CONTACT US</a></li>
 			</ul>
@@ -108,8 +106,8 @@
 						<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
 					</c:if></li>
 
-				<li><security:authorize access="hasRole('Role_USER')">
-						<li><a href="<c:url value="/booking/getbooking"></c:url>">BOOKING</a></li>
+				<li><security:authorize access="hasRole('ROLE_USER')">
+						<li><a href="<c:url value="/booking-getbooking"></c:url>">BOOKING</a></li>
 					</security:authorize></li>
 
 

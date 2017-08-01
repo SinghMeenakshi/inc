@@ -80,7 +80,7 @@
 						class="img-circle">
 					<p>This is the to get the peace of mind and rejuvenate yourself</p>
 
-					<a href="#" target="_blank" class="btn btn-warning btn-block">lets
+					<a href="holy"  class="btn btn-warning btn-block">lets
 						go!!</a>
 				</div>
 				<!-- ending panel  -->
@@ -98,7 +98,7 @@
 						class="img-circle">
 					<p>MAKE SOME NEW MEMORIES.. VISIT THIRUVANANTHAPURAM</p>
 
-					<a href="#" target="_blank" class="btn btn-danger btn-block">CREATE
+					<a href="children" target="_blank" class="btn btn-danger btn-block">CREATE
 						NEW MEMORIES</a>
 				</div>
 				<!-- ending panel  -->
@@ -115,7 +115,7 @@
 					<img src="images/p11.jpg" alt="FAMILY VISIT" class="img-circle">
 					<p>ENJOYING WITH FAMILY WHILE GOING AROUND INDIA</p>
 
-					<a href="#" target="_blank" class="btn btn-info btn-block">FAMILY
+					<a href="family" target="_blank" class="btn btn-info btn-block">FAMILY
 						TIME!!</a>
 				</div>
 				<!-- ending panel  -->

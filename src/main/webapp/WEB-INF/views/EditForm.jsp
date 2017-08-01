@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%@ include file="navigation.jsp"%>
-	<c:url value="/admin/editpack" var="url2"></c:url>
+	<c:url value="/admin-editpack" var="url2"></c:url>
 	<form:form action="${url2 }" modelAttribute="pack" enctype="multipart/form-data">
 		<div class="form-group">
 			<form:hidden path="id" class="form-control" />

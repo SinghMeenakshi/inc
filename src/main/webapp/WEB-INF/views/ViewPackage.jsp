@@ -23,10 +23,26 @@
 	<tr>
 			<td>Description:</td> <td> ${pack.description }</td>
 	</tr>
+	<tr>
+		<td>Vacancy:</td><td>${product.vacancy }</td>
+	</tr>
 </table>
+
+<c:if  test="${product.vacancy==0 }">
+sorry you are late
+</c:if>
 	
-	ENTER NO. OF PEOPLE <input type="text" name="persons">
-<a href="booking/addbooking/${pack.id }/${persons }"><span class="glyphicon glyphicon-plane"></span></a>
+<c:if test="${product.quantity!=0 }">
+<c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
+<form action="${url }">
+	ENTER NO. OF PEOPLE <input type="text" name="persons"><br>
+	
+	<button type="submit" 
+ style="background:none;border:none;padding:0" class="btn btn-default btn-lg">
+<span class="glyphicon glyphicon-plane"></span></button>
+</form>
+</c:if>
+
 <c:url value="getallpacks" var="url1"></c:url>
 <a href="${url1 }" class="btn btn-info">BACK TO PACKAGE LIST</a>
 

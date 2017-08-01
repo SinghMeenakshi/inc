@@ -22,5 +22,5 @@
 </bean>
  <mvc:resources mapping="images/**" location="WEB-INF/resources/images/"></mvc:resources>
 <mvc:resources mapping="style/**" location="WEB-INF/resources/style/"></mvc:resources>
-           
+       
 </beans>

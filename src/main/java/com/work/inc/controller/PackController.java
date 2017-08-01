@@ -28,7 +28,7 @@ public class PackController {
 	
 	private PackService packService;
 
-	@RequestMapping("/admin/getpackform")
+	@RequestMapping("/admin-getpackform")
 	public String getPackForm(Model model) {
 		List<Category> categories = packService.getAllCategories();
 		model.addAttribute("categories", categories);
@@ -36,7 +36,7 @@ public class PackController {
 		return "PackForm";
 	}
 
-	@RequestMapping("/admin/savepack")
+	@RequestMapping("/admin-savepack")
 	public String savePack(@Valid @ModelAttribute(name = "pack") Pack pack, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			List<Category> categories = packService.getAllCategories();
@@ -75,7 +75,7 @@ public class PackController {
 		return "ViewPackage";
 	}
 
-	@RequestMapping("/admin/deletepack{id}")
+	@RequestMapping("/admin-deletepack{id}")
 	public String getPackById(@PathVariable int id) {
 		packService.deletePack(id);
 		Path path = Paths.get("C:\\Users\\MEENAKSHI\\workspace\\inc\\src\\main\\webapp\\WEB-INF\\resources\\images\\"
@@ -90,7 +90,7 @@ public class PackController {
 		return "redirect:/getallpacks";
 	}
 
-	@RequestMapping("/admin/geteditform{id}")
+	@RequestMapping("/admin-geteditform{id}")
 	public String getEditForm(@PathVariable int id, Model model) {
 		List<Category> categories = packService.getAllCategories();
 		model.addAttribute("categories", categories);
@@ -99,7 +99,7 @@ public class PackController {
 		return "EditForm";
 	}
 
-	@RequestMapping("/admin/editpack")
+	@RequestMapping("/admin-editpack")
 	public String editpack(@Valid @ModelAttribute(name = "pack") Pack pack, BindingResult result, Model model) {
 		if (result.hasErrors()) {
 			List<Category> categories = packService.getAllCategories();

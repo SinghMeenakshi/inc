@@ -11,12 +11,12 @@
 
 	<div>
 	<div>
-	<c:url value="/booking/clearbooking/${booking.id }" var="clear"></c:url>
+	<c:url value="/booking-clearbooking${booking.id }" var="clear"></c:url>
 	<a href="${clear }" class="btn btn-danger" pull-left>
 	<span class="glyphicon glyphicon-plane"></span>
 	CLEAR CART
 	</a>
-	<a href="<c:url value="/booking/order/${booking.id }"></c:url>" class="btn btn-success pull-right">
+	<a href="<c:url value="/booking-order${booking.id }"></c:url>" class="btn btn-success pull-right">
 	<span class="glyphicon glyphicon-plane"></span> CHECK OUT 
 	</a>
 	<table class="table table-striped">
@@ -31,7 +31,7 @@
 	<td>${bookTour.pack.packageName }</td>
 	<td>${bookTour.vacancy }</td>
 	<td>${bookTour.totalPrice }</td>
-	<c:url value="booking/removebooktour/${bookTour.bookTourId }" var="remove"></c:url>
+	<c:url value="/booking-removebooktour${bookTour.bookTourId }" var="remove"></c:url>
 	<td>
 	<a href="${remove }" class="label label-danger" pull-left>
 	<c:set var="grandTotal" value="${bookTour.totalPrice + grandTotal }"></c:set>
