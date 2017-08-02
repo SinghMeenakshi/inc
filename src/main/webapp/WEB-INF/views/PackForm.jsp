@@ -9,8 +9,8 @@
 <body>
 	<%@ include file="navigation.jsp"%>
 	<div class="container">
-
-						<form:form action="/admin-savepack" method="post" modelAttribute="pack"
+							<c:url value="/admin-savepack" var="url3"></c:url>
+						<form:form action="${url3 }" method="post" modelAttribute="pack"
 							enctype="multipart/form-data">
 
 							<div class="form-group">

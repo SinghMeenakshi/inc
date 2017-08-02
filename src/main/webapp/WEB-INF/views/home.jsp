@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HOME</title>
 </head>
-<body >
+<body style="background-color:#C8C8C8">
 
 	<%@ include file="navigation.jsp"%>
 	<div class="container-fluid">
@@ -68,9 +68,9 @@
 		</div>
 		<!-- offer panel end -->
 
-		<div class="row" id="offers" style="text-align:center;">
+		<div class="row" id="offers" style="text-align:center;" >
 			<div class="col-sm-4 feature">
-				<div class="panel">
+				<div class="panel" style="background-color:#C8C8C8">
 					<div class="panel-heading">
 						<h3 class="panel-title">HOLY TREK</h3>
 					</div>
@@ -88,7 +88,7 @@
 			<!-- ending box panel division -->
 
 			<div class="col-sm-4 feature">
-				<div class="panel">
+				<div class="panel" style="background-color:#C8C8C8">
 					<div class="panel-heading">
 						<h3 class="panel-title">CHILDREN OFFERS</h3>
 					</div>
@@ -106,7 +106,7 @@
 			<!-- ending box panel division -->
 
 			<div class="col-sm-4 feature">
-				<div class="panel">
+				<div class="panel" style="background-color:#C8C8C8">
 					<div class="panel-heading">
 						<h3 class="panel-title">FAMILY PROGRAM</h3>
 					</div>

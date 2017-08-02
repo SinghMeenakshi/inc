@@ -31,17 +31,27 @@
 		</div>
 		<br>
 		<div class="form-group">
+			VACANCY:
+			<form:input path="vacancy" class="form-control" />
+			<form:errors path="vacancy" cssStyle="color:red;"></form:errors>
+		</div>
+	<br>
+		<div class="form-group">
 			PRICE:
 			<form:input path="price" class="form-control" />
 			<form:errors path="price" cssStyle="color:red;"></form:errors>
 		</div>
 		<br>
 		<div class="form-group">
-			SELECT CATEGORY
-			<c:forEach items="${categories }" var="c">
-				<form:radiobutton path="category.id" value="${c.id }" /> ${c.categoryName }
-			</c:forEach>
-		</div>
+								SELECT CATEGORY
+								<form:select path="category.id">
+									<c:forEach items="${categories }" var="c">
+										<form:option value="${c.id }">${c.categoryName }</form:option>
+										<%-- <form:radiobutton path="category.id" value=" ${c.id }" /> ${c.categoryName } --%>
+
+									</c:forEach>
+								</form:select>
+							</div>
 		<div class="form-group">
 			<input type="submit" value="EDIT PACKAGE" />
 			</div>

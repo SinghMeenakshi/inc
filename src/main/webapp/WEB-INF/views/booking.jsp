@@ -16,13 +16,16 @@
 	<span class="glyphicon glyphicon-plane"></span>
 	CLEAR CART
 	</a>
+	
+	
 	<a href="<c:url value="/booking-order${booking.id }"></c:url>" class="btn btn-success pull-right">
 	<span class="glyphicon glyphicon-plane"></span> CHECK OUT 
 	</a>
+
 	<table class="table table-striped">
 	<thead>
 	<tr>
-	<th>NAME</th><th>VACANCY</th><th>TOTAL PRICE</th><th>REMOVE</th>
+	<th>NAME</th><th>PEOPLE TRAVELLING</th><th>TOTAL PRICE</th><th>REMOVE</th>
 	</tr>
 	</thead>
 	<c:set var="grandTotal" value="0" ></c:set>
@@ -44,6 +47,9 @@
 	Total Price :${grandTotal }
 	</div>
 	</div>
+	
+	<div class="footer navbar-fixed-bottom">
+<%@ include file="footer.jsp"%>
+</div>
 </body>
 </html>
-<%@ include file="footer.jsp"%>

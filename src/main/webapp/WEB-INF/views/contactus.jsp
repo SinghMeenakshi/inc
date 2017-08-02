@@ -11,16 +11,21 @@
 <title>CONTACT US</title>
 </head>
 <%@ include file="navigation.jsp"%>
-<body id="con">
+<body id="con" style="background-color:#E8E8E8">
 
 	
 	<div class="container" >
-		<div class="col-sm-6">
+
+		<div class="col-sm-6" style="text-align:left;">
 			<h3>INCREDIBLE INDIA TOUR</h3>
 			<p>
-				You can contact us to on our watsapp no. or visit us on <a href="/">incredibleindiatour
-					<a>website.
+				You can contact us to on our watsapp no. or visit us on <a href="home">incredibleindiatour
+					</a>website.
+					<br>
+				<h5>OUR BRANCHES IN EVERY STATE VISIT YOUR NEAR BY BRANCH OR CALL US ON +911234567890.. FOR ANY QUERY MESSEAGE US ..</h5>
 			</p>
+<br>
+			<div class="col-md-12">
 			<form>
 				<fieldset>
 					<div class="form-group">
@@ -31,7 +36,7 @@
 						</div>
 					</div>
 
-
+<br><br>
 					<div class="form-group">
 						<label class="col-md-3 control-label" for="email">Your
 							E-mail</label>
@@ -40,18 +45,18 @@
 								placeholder="Your email" class="form-control">
 						</div>
 					</div>
-
+<br><br>
 
 					<div class="form-group">
 						<label class="col-md-3 control-label" for="message">Your
 							message</label>
 						<div class="col-md-9">
 							<textarea class="form-control" id="message" name="message"
-								placeholder="Please enter your message here..." rows="5"></textarea>
+								placeholder="Please enter your message here..." rows="3"></textarea>
 						</div>
 					</div>
 
-
+<br><br><br>
 					<div class="form-group">
 						<div class="col-md-12 text-right">
 							<button type="submit" class="btn btn-primary btn-lg">Submit</button>
@@ -60,7 +65,7 @@
 				</fieldset>
 			</form>
 		</div>
-
+</div>
 		<div class="col-sm-6">
 			<h4>
 				<span class="glyphicon glyphicon-map-marker"></span>OUR LOCATION

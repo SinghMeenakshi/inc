@@ -23,14 +23,14 @@
 		});
 </script>
 </head>
-<body>
+<body style="background-color:#E8E8E8">
 	
 	<div class="container-fluid">
 	<b >LIST OF PRODUCTS</b>
 	
 		<table class="table table-striped table-hover" style="font-size:20px;">
 		<thead>
-			<tr style="color:green;">
+			<tr style="color:#380000">
 				<th>IMAGE</th>
 				<th>PACKAGE NAME</th>
 				<th>PRICE</th>
@@ -43,7 +43,7 @@
 				
 			</tr>
 		</thead>
-		<tbody  style="color:purple;" >
+		<tbody  style="color:#300000;" >
 			<c:forEach items="${packs}" var="p">
 			<c:url value="images/${p.id }.png" var="imageUrl"></c:url>
 			<c:url value="/viewpack${p.id}" var="viewUrl" ></c:url>
@@ -52,7 +52,7 @@
 			<tr>
 					<td><img src="${imageUrl }" height="100" width="150"></td>
 					<td><a href="${viewUrl}">${p.packageName }</a><td><b class="fa fa-inr">${p.price }</b></td><td>${p.category.categoryName }</td>
-					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:blue;"></span></a></td>
+					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:#FF0033"></span></a></td>
 					<security:authorize access="hasRole('ROLE_ADMIN')">
 					<td><a href="${editUrl}" > <span class="glyphicon glyphicon-pencil" style="color:brown;"></span></a></td>
 					<td><a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash" style="color:red;"></span></a></td>

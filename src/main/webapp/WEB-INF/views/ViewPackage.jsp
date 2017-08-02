@@ -6,69 +6,54 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>VIEW PACKAGE LIST</title>
 </head>
-<body>
+<body >
 <%@ include file="navigation.jsp"%>
 <div class="container" > 
+<B >DETAILS ABOUT THE PAKAGES</B>
+<table>
+   <tr>
+   <c:url value="images/${pack.id }.png" var="imageUrl"></c:url>
+   <td><img src="${imageUrl }" height="100" width="100"></td>
+   </tr>
+	<tr>
+			<td>PACKAGE NAME:</td><td>${pack.packageName }</td></tr>
+	<tr><p>
+			<td>Price:</td><td>${pack.price }</td>
+	</tr>
+	<tr>
+			<td>Description:</td> <td> ${pack.description }</td>
+	</tr>
+	<tr>
+		<td>Vacancy:</td><td>${pack.vacancy }</td>
+	</tr>
+</table>
+<div class="container">
+<c:if  test="${pack.vacancy==0 }">
+sorry you are late
+</c:if>
+	
+<c:if test="${pack.vacancy!=0 }">
+<c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
+<form action="${url }">
+ENTER NO. OF PEOPLE <input type="text" name="persons"><br>
 
-		<div class="row">
-			<div class="col-md-12">				
-				<div class="panel panel-default  panel--styled">
-					<div class="panel-body">
-						<div class="col-md-12 panelTop">	
-							<div class="col-md-4">	
-							 <c:url value="images/${pack.id }.png" var="imageUrl"></c:url>
-								<img class="img-responsive" src="${imageUrl }" height="350" width="350" >
-							</div>
-							<div class="col-md-8">	
-								
-								<h2 style="text-align:center;">${pack.packageName }</h2>
-								<p  style="text-align:center;"> <b>${pack.description }</b></p>
-								<table>
-								<tr>
-										<td><b>VACANCY:</b></td><td><strong>${pack.vacancy }</strong></td>
-								</tr>
-							</table>
-							
-							
-									<c:if  test="${pack.vacancy==0 }">
-										SORRY YOUR LATE !!! TRY AGAIN SOME OTHER TIME ...
-									</c:if>
-	
-									<c:if test="${pack.vacancy!=0 }">
-									<c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
-									<form action="${url }">
-							
-							<b>NO. PEOPLE TRAVELLING:</b><input type="text" name="persons"><br>
-	
-	
-							</form>
-								</c:if>
-							</div>
-					
-						<div class="col-md-12 panelBottom">
-							<div class="col-md-4 text-center">
-								<h5>Price:<span class="itemPrice"><b class="fa fa-inr">${pack.price }</b></span></h5>						
-							</div>
-							<div class="col-md-4 text-left">
-							<c:if test="${pack.vacancy!=0 }">
-								<c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
-								<form action="${url }">
-								<button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-plane"></span>ADD BOOKING</button>
-							</form>
-							</c:if>
-							</div>
-							<div class="col-md-4">
-								<c:url value="getallpacks" var="url1"></c:url>
-									<a href="${url1 }" class="btn btn-info">BACK TO PACKAGE LIST</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-   </div>
-
+<div class="row">
+<div class="col-xs-6">
+<security:authorize access="hasRole('ROLE_USER')">
+<button type="submit" class="btn btn-warning">add booking</button>
+</security:authorize>
+</div>
+</form>
+</c:if>
+<div class="col-xs-6">
+<c:url value="getallpacks" var="url1"></c:url>
+<a href="${url1 }" class="btn btn-info" class="pull-right">BACK TO PACKAGE LIST</a>
+</div>
+</div>
+</div>
+<div class="footer navbar-fixed-bottom">
 <%@ include file="footer.jsp"%>
+</div>
 </body>
 </html>
+

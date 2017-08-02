@@ -6,12 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>LOGIN PAGE</title>
-</head>
 <%@ include file="navigation.jsp"%>
-<body >
+
+</head>
+
+<body style="background-color:#E8E8E8">
 
 
-	<div class="container" style="margin-top:20px;">
+	<div class="container" style="margin-top:50px;">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 
@@ -44,8 +46,8 @@
 			</div>
 		</div>
 	</div>
-
-
+<div class="footer navbar-fixed-bottom">
+<%@ include file="footer.jsp"%>
+</div>
 </body>
 </html>
-<%@ include file="footer.jsp"%>
