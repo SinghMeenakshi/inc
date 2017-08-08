@@ -9,7 +9,7 @@
 <body >
 <%@ include file="navigation.jsp"%>
 <div class="container" > 
-<B >DETAILS ABOUT THE PAKAGES</B>
+<B style="text-align:center;" >DETAILS </B>
 <table>
    <tr>
    <c:url value="images/${pack.id }.png" var="imageUrl"></c:url>
@@ -18,29 +18,31 @@
    <br>
 	<tr>
 	
-			<td>NAME:</td><td>${pack.packageName }</td></tr>
+			<td><b>NAME:</b></td><td>${pack.packageName }</td></tr>
 	<tr>
-			<td>Price:</td><td>${pack.price }</td>
+			<td><b>Price:</b></td><td><span class="fa fa-inr">${pack.price }</span></td>
 	</tr>
 	<tr>
-			<td>Description:</td> <td> ${pack.description }</td>
+			<td><b>Description:</b></td> <td> ${pack.description }</td>
 	</tr>
 	<tr>
-		<td>Vacancy:</td><td>${pack.vacancy }</td>
+		<td><b>Vacancy:</b></td><td>${pack.vacancy }</td>
 	</tr>
 </table>
 <div class="container">
 <c:if  test="${pack.vacancy==0 }">
-sorry you are late
+<div >
+<style=text-align:"right;"> <b><i><strong>sorry you are late..come back soon !!!</strong></i></b></style>
+ </div>
 </c:if>
-	
+ 
+ <br>
 <c:if test="${pack.vacancy!=0 }">
 <c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
 <form action="${url }">
 <br>
-ENTER NO. OF PEOPLE: <input type="text" name="persons">
-<br>
-
+ENTER NO. OF PEOPLE(atleast one should be there): <input type="text" name="persons">
+<br><br><br>
 <div class="row">
 <div class="col-xs-6">
 <security:authorize access="hasRole('ROLE_USER')">
@@ -49,6 +51,7 @@ ENTER NO. OF PEOPLE: <input type="text" name="persons">
 </div>
 </form>
 </c:if>
+
 <div class="col-xs-6">
 <c:url value="getallpacks" var="url1"></c:url>
 <a href="${url1 }" class="btn btn-info" class="pull-right">BACK TO PACKAGE LIST</a>

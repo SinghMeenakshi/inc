@@ -75,6 +75,14 @@
 						<li><a href="searchbyCategory14">RESORTS</a></li>
 						<li><a href="searchbyCategory15">HOTELS</a></li>
 					</ul></li>
+					
+				<!-- 	<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">SPECIAL OFFERS<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="searchbyCategory16">HOLY PLACE</a></li>
+						<li><a href="searchbyCategory17">CHIILDRENS OFFERS</a></li>
+						<li><a href="searchbyCategory18">FAMILY PROGRAM</a></li>
+					</ul></li> -->
 				
 					<li class="dropdown"><security:authorize access="hasRole('ROLE_ADMIN')">
 							<a class="dropdown-toggle" data-toggle="dropdown" href="#">PACKAGE

@@ -32,8 +32,8 @@
                                 <thead>
                                     <tr>
                                         <td>TOUR PACKAGE</td>
-                                        <td>#</td>
-                                        <td class="text-center">Price</td>
+                                        <td>People travelling</td>
+                                        <td class="text-center">Price for one</td>
                                         <td class="text-center">Total</td>
                                     </tr>
                                 </thead>
@@ -56,7 +56,7 @@
                                         <h4><strong>Grand Total:</strong></h4>
                                     </td>
                                     <td class="text-center text-danger">
-                                        <h4><strong>$ ${grandTotal}</strong></h4>
+                                        <h4><strong><b class="fa fa-inr"> ${grandTotal}</b></strong></h4>
                                     </td>
                                 </tr>
 

@@ -61,7 +61,7 @@
 
 			<div class="col-12">
 
-				<h2 style="text-align:center;">SPECIAL OFFERS</h2>
+				<h2 style="text-align:center;">SPECIAL OFFERS COMING SOON</h2>
 				<p class="lead">GRAB THESE OFFERS BEFORE THE RUN OFF.... !!</p>
 			</div>
 			<!-- ending 12 columns -->
@@ -91,7 +91,7 @@
 
 						<!-- Modal content-->
 						<div class="modal-content">
-							<div class="modal-header" style="background-color:pink">
+							<div class="modal-header" >
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 								<h4 class="modal-title" >HOLY TREK</h4>
 							</div>
@@ -99,16 +99,17 @@
 							<div class="col-md-12">
 							<div class="row">
 							<div class="col-sm-6">
-							 <img src="images/tri1.jpg" height="200" width="250" class="img-responsive" >
+							 <img src="images/place1.jpg" height="150" width="250" class="img-responsive" >
 							</div>
 							<div class="col-sm-6">
-							 <img src="images/tri2.jpg" height="200" width="250" class="img-responsive" >
+							 <img src="images/place2.jpg" height="400" width="250" class="img-responsive" >
 							</div>
 							</div>
 							</div>
-								<p>Some text in the modal.</p>
+								<p><i>Beyond the pilgrimage site, nestles a spiritual aura  </i>Kedarnath Vasuki Tal Trek</p>
+								<p>Kedarnath is one of the popular Hindu pilgrimage sites that is alighted at a lofty height of 3553 meters and holds a shrine, which is dedicated to Lord Shiva, making it one of the four sites in India’s Chota Char Dham pilgrimage tour. The Kedarnath site, on the banks of River Mandakini, is the most remote of the four sites that is located close to the Chorabari Glacier and is flanked by breathtaking snow-capped peaks. </p>
 							</div>
-							<div class="modal-footer" style="background-color:pink">
+							<div class="modal-footer">
 								<button type="button" class="btn btn-default"
 									data-dismiss="modal">Close</button>
 							</div>
@@ -147,7 +148,18 @@
 								<h4 class="modal-title">Modal Header</h4>
 							</div>
 							<div class="modal-body">
-								<p>Some text in the modal.</p>
+							<div class="col-md-12">
+							<div class="row">
+							<div class="col-sm-6">
+							 <img src="images/tri5.jpg" height="150" width="250" class="img-responsive" >
+							</div>
+							<div class="col-sm-6">
+							 <img src="images/tri4.jpg" height="250" width="250" class="img-responsive" >
+							</div>
+							</div>
+							</div>
+								<p><b>Thiruvananthapuram</b> also known as Trivandrum, is the capital and the largest city of the Indian state of Kerala.</p>
+							<p> It is referred to as 'God's Own Country'. It is often called Trivandrum, a derivative of the original name given by the British. It lies on the southern tip of India in the west coast.</p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default"
@@ -184,10 +196,21 @@
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Modal Header</h4>
+								<h4 class="modal-title">FAMILY TIME</h4>
 							</div>
 							<div class="modal-body">
-								<p>Some text in the modal.</p>
+							<div class="col-md-12">
+							<div class="row">
+							<div class="col-sm-6">
+							 <img src="images/tri1.jpg" height="200" width="250" class="img-responsive" >
+							</div>
+							<div class="col-sm-6">
+							 <img src="images/tri2.jpg" height="250" width="250" class="img-responsive" >
+							</div>
+							</div>
+							</div>
+								<p><b>RAJASTHAN</b></p>
+								<p>At the western edge of India, their lies a picturesque state, the land of choices- Rajasthan. Rajasthan have destinations which offers to every vacation experience that you want to have, whether you choose Rajasthan Family Tour Packages with family or friends. The families who are interested in history, heritage and culture the destinations like Jaipur, Jodhpur and Jaisalmer would be suited. If you are looking for adventure in Rajasthan Family tour Packages, you will definitely like tiger country Ranthambore. For families taking Rajasthan Family Tour Packages having children with them, all cities in Rajasthan cater to their need for learning and fun with different activities within plethora of hotel options. </p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-default"
