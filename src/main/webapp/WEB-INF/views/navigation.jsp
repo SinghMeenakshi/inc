@@ -64,14 +64,14 @@
 						<li><a href="searchbyCategory7">RIVER RAFTING</a></li>
 						<li><a href="searchbyCategory8">SAFARI</a></li>
 						<li><a href="searchbyCategory9">HOLY VISIT</a></li>
-						<li><a href="searchbyCategory10">MOUNTAINEERING</a></li>
-						<li><a href="searchbyCategory11">JEEP SAFARI</a></li>
+					<!-- 	<li><a href="searchbyCategory10">MOUNTAINEERING</a></li>
+						<li><a href="searchbyCategory11">JEEP SAFARI</a></li> -->
 					</ul></li>
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" href="#">STAY<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="searchbyCategory13">CITY WISE</a></li>
-						<li><a href="searchbyCategory12">LUXURY WISE</a></li>
+						<!-- <li><a href="searchbyCategory13">CITY WISE</a></li>
+						<li><a href="searchbyCategory12">LUXURY WISE</a></li> -->
 						<li><a href="searchbyCategory14">RESORTS</a></li>
 						<li><a href="searchbyCategory15">HOTELS</a></li>
 					</ul></li>

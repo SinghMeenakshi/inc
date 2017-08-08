@@ -13,11 +13,13 @@
 <table>
    <tr>
    <c:url value="images/${pack.id }.png" var="imageUrl"></c:url>
-   <td><img src="${imageUrl }" height="100" width="100"></td>
+   <td><img src="${imageUrl }" height="300" width="350"></td>
    </tr>
+   <br>
 	<tr>
-			<td>PACKAGE NAME:</td><td>${pack.packageName }</td></tr>
-	<tr><p>
+	
+			<td>NAME:</td><td>${pack.packageName }</td></tr>
+	<tr>
 			<td>Price:</td><td>${pack.price }</td>
 	</tr>
 	<tr>
@@ -35,12 +37,14 @@ sorry you are late
 <c:if test="${pack.vacancy!=0 }">
 <c:url value="/booking-addbooking${pack.id }" var="url"></c:url>
 <form action="${url }">
-ENTER NO. OF PEOPLE <input type="text" name="persons"><br>
+<br>
+ENTER NO. OF PEOPLE: <input type="text" name="persons">
+<br>
 
 <div class="row">
 <div class="col-xs-6">
 <security:authorize access="hasRole('ROLE_USER')">
-<button type="submit" class="btn btn-warning">add booking</button>
+<button type="submit" class="btn btn-warning">ADD BOOKING</button>
 </security:authorize>
 </div>
 </form>
@@ -51,9 +55,10 @@ ENTER NO. OF PEOPLE <input type="text" name="persons"><br>
 </div>
 </div>
 </div>
-<div class="footer navbar-fixed-bottom">
-<%@ include file="footer.jsp"%>
 </div>
+<br>
+<%@ include file="footer.jsp"%>
 </body>
 </html>
+
 

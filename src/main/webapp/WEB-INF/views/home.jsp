@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HOME</title>
+
 </head>
 <body style="background-color:#C8C8C8">
 
@@ -69,41 +70,97 @@
 		<!-- offer panel end -->
 
 		<div class="row" id="offers" style="text-align:center;" >
-			<div class="col-sm-4 feature">
-				<div class="panel" style="background-color:#C8C8C8">
-					<div class="panel-heading">
-						<h3 class="panel-title">HOLY TREK</h3>
-					</div>
-					<!-- ending panel heading -->
-
-					<img src="images/p22.jpg" alt="VISIT THIS HOLY PLACE"
-						class="img-circle">
-					<p>This is the to get the peace of mind and rejuvenate yourself</p>
-
-					<a href="holy" target="_blank" class="btn btn-warning btn-block">lets
-						go!!</a>
+		<div class="col-sm-4 feature">
+			<div class="panel" style="background-color: #C8C8C8">
+				<div class="panel-heading">
+					<h3 class="panel-title">HOLY TREK</h3>
 				</div>
-				<!-- ending panel  -->
-			</div>
-			<!-- ending box panel division -->
+				<!-- ending panel heading -->
 
-			<div class="col-sm-4 feature">
-				<div class="panel" style="background-color:#C8C8C8">
-					<div class="panel-heading">
-						<h3 class="panel-title">CHILDREN OFFERS</h3>
+				<img src="images/p22.jpg" alt="VISIT THIS HOLY PLACE"
+					class="img-circle" class="img-responsive" >
+				<p>This is the to get the peace of mind and rejuvenate yourself</p>
+
+				<!-- Trigger the modal with a button -->
+				<button type="button" class="btn btn-warning btn-block"
+					data-toggle="modal" data-target="#myModal1">HOLY PLACE</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal1" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header" style="background-color:pink">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title" >HOLY TREK</h4>
+							</div>
+							<div class="modal-body">
+							<div class="col-md-12">
+							<div class="row">
+							<div class="col-sm-6">
+							 <img src="images/tri1.jpg" height="200" width="250" class="img-responsive" >
+							</div>
+							<div class="col-sm-6">
+							 <img src="images/tri2.jpg" height="200" width="250" class="img-responsive" >
+							</div>
+							</div>
+							</div>
+								<p>Some text in the modal.</p>
+							</div>
+							<div class="modal-footer" style="background-color:pink">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
 					</div>
-					<!-- ending panel heading -->
-
-					<img src="images/p33.jpg" alt="SWEET CHILDREN MEMORIES"
-						class="img-circle">
-					<p>MAKE SOME NEW MEMORIES.. VISIT THIRUVANANTHAPURAM</p>
-
-					<a href="children" target="_blank" class="btn btn-danger btn-block">CREATE
-						NEW MEMORIES</a>
 				</div>
-				<!-- ending panel  -->
+
 			</div>
-			<!-- ending box panel division -->
+			<!-- ending panel  -->
+		</div>
+		<!-- ending box panel division -->
+
+		<div class="col-sm-4 feature">
+			<div class="panel" style="background-color: #C8C8C8">
+				<div class="panel-heading">
+					<h3 class="panel-title">CHILDREN OFFERS</h3>
+				</div>
+				<!-- ending panel heading -->
+
+				<img src="images/p33.jpg" alt="SWEET CHILDREN MEMORIES"
+					class="img-circle" class="img-responsive" >
+				<p>MAKE SOME NEW MEMORIES.. VISIT THIRUVANANTHAPURAM</p>
+
+				<!-- Trigger the modal with a button -->
+				<button type="button" class="btn btn-danger btn-block"
+					data-toggle="modal" data-target="#myModal2">CREATE NEW MEMORIES</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Modal Header</h4>
+							</div>
+							<div class="modal-body">
+								<p>Some text in the modal.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- ending panel  -->
+		</div>
+		<!-- ending box panel division -->
 
 			<div class="col-sm-4 feature">
 				<div class="panel" style="background-color:#C8C8C8">
@@ -112,11 +169,34 @@
 					</div>
 					<!-- ending panel heading -->
 
-					<img src="images/p11.jpg" alt="FAMILY VISIT" class="img-circle">
+					<img src="images/p11.jpg" alt="FAMILY VISIT" class="img-circle" class="img-responsive" >
 					<p>ENJOYING WITH FAMILY WHILE GOING AROUND INDIA</p>
 
-					<a href="family" target="_blank" class="btn btn-info btn-block">FAMILY
-						TIME!!</a>
+					<!-- Trigger the modal with a button -->
+				<button type="button" class="btn btn-info btn-block"
+					data-toggle="modal" data-target="#myModal3">FAMILY TIME</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal3" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Modal Header</h4>
+							</div>
+							<div class="modal-body">
+								<p>Some text in the modal.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+					
 				</div>
 				<!-- ending panel  -->
 			</div>
