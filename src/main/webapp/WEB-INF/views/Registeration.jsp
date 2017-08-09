@@ -7,28 +7,15 @@
 <title>Register</title>
 <%@ include file="navigation.jsp"%>
 <script type="text/javascript">
-function checkPass()
-{
-    var pass1 = document.getElementById('pass1');
-    var pass2 = document.getElementById('pass2');
-   
-    var message = document.getElementById('confirmMessage');
-  
-    var goodColor = "#66cc66";
-    var badColor = "#ff6666";
-   
-    if(pass1.value == pass2.value){
-       
-        pass2.style.backgroundColor = goodColor;
-        message.style.color = goodColor;
-        message.innerHTML = "Passwords Match!"
-    }else{
-       
-        pass2.style.backgroundColor = badColor;
-        message.style.color = badColor;
-        message.innerHTML = "Passwords Do Not Match!"
-    }
-} 
+	function Validate() {
+		var password = document.getElementById("txtPassword").value;
+		var confirmPassword = document.getElementById("txtConfirmPassword").value;
+		if (password != confirmPassword) {
+			alert("Passwords do not match.");
+			return false;
+		}
+		return true;
+	}
 </script>
 </head>
 <body style="background-color:#E8E8E8">
@@ -128,24 +115,22 @@ function checkPass()
 								<p style="color: red">${duplicateUsername }</p>
 							</div>
 
-							<div class="form-group">
-								<form:label class="control-label" path="user.password" for="pass1">PASSWORD</form:label>
-								<form:input type="password" path="user.password"
-									class="form-control" placeholder="password" name="pass1" id="pass1" ></form:input>
-								<form:errors path="user.password" style="color:red;"></form:errors>
-							</div>
-							
-							<div class="form-group">
-								<form:label class="control-label" path="user.password" for="pass2">COMFIRM PASSWORD</form:label>
-								<form:input type="password" path="user.password"
-									class="form-control" placeholder="confirm password"  name="pass2" id="pass2" onkeyup="checkPass(); return false;"></form:input>
-								  <span id="confirmMessage" class="confirmMessage"></span>
-								<form:errors path="user.password" style="color:red;"></form:errors>
-							</div>
+							 <label>Password</label> <br> <input type="password"
+							id="txtPassword" class="form-control" />
+						<form:errors path="user.password" cssStyle="color:red" 
+pattern="(?=.*\d)(?+.*[a-z])(?=.*[A-Z]).{8,}" title="must contain at least one number and one uppercase and lowercase letter and atleast 8 or more characters"
 
-							<div class="form-group">
-								<button type="submit" class="btn btn-warning">REGISTER</button>
-							</div>
+						></form:errors>
+						<br>
+
+						<form:label path="user.password">Confirm Password</form:label>
+						<br>
+						<form:input type="password" id="txtConfirmPassword"
+							path="user.password" class="form-control" />
+							
+							<br>
+							<input type="submit" value="Sign-Up" onclick="return Validate()"
+						class="btn btn-warning">
 						</div>
 					</div>
 			</div>

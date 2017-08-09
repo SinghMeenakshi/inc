@@ -55,7 +55,7 @@
 					<td><a href="${viewUrl}" > <span class="glyphicon glyphicon-info-sign" style="color:#FF0033"></span></a></td>
 					<security:authorize access="hasRole('ROLE_ADMIN')">
 					<td><a href="${editUrl}" > <span class="glyphicon glyphicon-pencil" style="color:brown;"></span></a></td>
-					<td><a href="${deleteUrl}" > <span class="glyphicon glyphicon-trash" style="color:red;"></span></a></td>
+					<td><a href="${deleteUrl}" onclick="return confirm('Are you sure you want to delete this package?');"> <span class="glyphicon glyphicon-trash" style="color:red;"></span></a></td>
 					</security:authorize>
 			</tr>
 			</c:forEach>

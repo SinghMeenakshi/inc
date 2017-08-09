@@ -35,13 +35,13 @@ public class TouristController {
 		}
 		User user = touristService.validateUsername(tourist.getUser().getUsername());
 		if (user != null) {
-			model.addAttribute("duplicationUsername", "Username already exists plz try another username");
+			model.addAttribute("duplicateUsername", "Username already exists plz try another username");
 			return "Registeration";
 		}
 
 		Tourist duplicateTourist = touristService.validateEmail(tourist.getEmail());
 		if (duplicateTourist != null) {
-			model.addAttribute("duplicationEmail", "Email already exists plz try another Email");
+			model.addAttribute("duplicateEmail", "Email already exists plz try another Email");
 			return "Registeration";
 		}
 		touristService.registerTourist(tourist);
